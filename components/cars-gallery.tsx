@@ -29,7 +29,7 @@ export function CarsGallery() {
       make: "Audi",
       model: "A4 Allroad",
       price: "10 800$",
-      image: "/2018-audi-a4-sedan-luxury-car-dark-background.PNG",
+      image: "/2018-audi-a4-sedan-luxury-car-dark-background.png",
     },
     {
       year: "2018",
