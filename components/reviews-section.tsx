@@ -4,10 +4,12 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+
 export function ReviewsSection() {
   const [currentVideoReview, setCurrentVideoReview] = useState(0)
   const [currentTextReview, setCurrentTextReview] = useState(0)
-  const [reviewsPerSlide, setReviewsPerSlide] = useState(3) // десктоп по умолчанию
+  const [reviewsPerSlide, setReviewsPerSlide] = useState(3)
+  const [videoPosters, setVideoPosters] = useState<(string | null)[]>([])
 
   const videoReviews = [
     { name: "Сергій М.", car: "2019 Ford Escape", video: "/video/IMG_1041.MP4", text: "Дуже задоволений автомобілем, це була моя мрія, якісно підібрали авто та врахували всі побажання!" },
@@ -37,6 +39,32 @@ export function ReviewsSection() {
     return () => window.removeEventListener("resize", updateReviewsPerSlide)
   }, [])
 
+  useEffect(() => {
+    const generatePosters = async () => {
+      const posters: (string | null)[] = await Promise.all(
+          videoReviews.map((v) =>
+              new Promise<string | null>((resolve) => {
+                const video = document.createElement("video")
+                video.src = v.video
+                video.currentTime = 0.1
+                video.addEventListener("loadeddata", () => {
+                  const canvas = document.createElement("canvas")
+                  canvas.width = video.videoWidth
+                  canvas.height = video.videoHeight
+                  const ctx = canvas.getContext("2d")
+                  ctx?.drawImage(video, 0, 0, canvas.width, canvas.height)
+                  resolve(canvas.toDataURL("image/jpeg"))
+                })
+                video.addEventListener("error", () => resolve(null))
+              })
+          )
+      )
+      setVideoPosters(posters)
+    }
+    generatePosters()
+  }, [])
+
+
   // Карусель видео
   const nextVideoReview = () => setCurrentVideoReview((prev) => (prev + 1) % videoReviews.length)
   const prevVideoReview = () => setCurrentVideoReview((prev) => (prev - 1 + videoReviews.length) % videoReviews.length)
@@ -62,7 +90,11 @@ export function ReviewsSection() {
                       <div key={index} className="w-full flex-shrink-0 px-4">
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden">
                           <div className="relative aspect-video">
-                            <video src={review.video} className="w-full h-full object-cover" controls preload="metadata" />
+                            <video src={review.video} className="w-full h-full object-cover"
+                                   controls
+                                   preload="metadata"
+                                   playsInline
+                                   poster={videoPosters[index] ?? undefined} />
                           </div>
                           <div className="p-6">
                             <h3 className="text-xl font-bold text-white mb-1">{review.name}</h3>
