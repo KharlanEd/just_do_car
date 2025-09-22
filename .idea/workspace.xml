@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="">
+    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="исправил названия картинок">
+      <change afterPath="$PROJECT_DIR$/components/ScreenshotReviews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1024.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1025.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1026.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/cars-gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/cars-gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2018-audi-a4-sedan-luxury-car-dark-background.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/public/2018-audi-a4-sedan-luxury-car-dark-background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2018-audi-a4-sedan-luxury.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/2018-audi-a4-sedan-luxury.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2018-jeep-compass-suv-dark-background.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/2018-jeep-compass-suv-dark-background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2024-tesla-model-y-electric-suv-dark-background.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/2024-tesla-model-y-electric-suv-dark-background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kharlan/just_do_car/public/video",
+    "last_opened_file_path": "/Users/kharlan/just_do_car/public/reviews",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,10 +51,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/reviews" />
       <recent name="$PROJECT_DIR$/public/video" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/reviews" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -71,11 +76,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758187117558</updated>
-      <workItem from="1758187118649" duration="16459000" />
+      <workItem from="1758187118649" duration="21140000" />
     </task>
+    <task id="LOCAL-00001" summary="исправил названия картинок">
+      <option name="closed" value="true" />
+      <created>1758207760615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758207760615</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="исправил названия картинок" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправил названия картинок" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import { ProcessSection } from "@/components/process-section"
 import { ReviewsSection } from "@/components/reviews-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import ScreenshotReviews from "@/components/ScreenshotReviews";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <CarsGallery />
       <ProcessSection />
       <ReviewsSection />
+        <ScreenshotReviews/>
       <ContactSection />
       <Footer />
     </main>
