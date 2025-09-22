@@ -19,8 +19,8 @@ export function Footer() {
   ]
 
   const legalLinks = [
-    { label: "політика конфіденційності", href: "#" },
-    { label: "публічна офферта", href: "#" },
+    { label: "політика конфіденційності", href: "/privacy-policy" },
+    { label: "публічна оферта", href: "/public-offer" },
   ]
 
   return (

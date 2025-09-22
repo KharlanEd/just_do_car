@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="исправил названия картинок">
-      <change afterPath="$PROJECT_DIR$/components/ScreenshotReviews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1024.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1025.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/reviews/IMG_1026.PNG" afterDir="false" />
+    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="добавил скрин отзывы">
+      <change afterPath="$PROJECT_DIR$/app/privacy-policy/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public-offer/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/reviews-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/reviews-section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758187117558</updated>
-      <workItem from="1758187118649" duration="21140000" />
+      <workItem from="1758187118649" duration="25951000" />
     </task>
     <task id="LOCAL-00001" summary="исправил названия картинок">
       <option name="closed" value="true" />
@@ -86,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758207760615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добавил скрин отзывы">
+      <option name="closed" value="true" />
+      <created>1758533236247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758533236247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="исправил названия картинок" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправил названия картинок" />
+    <MESSAGE value="добавил скрин отзывы" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил скрин отзывы" />
   </component>
 </project>

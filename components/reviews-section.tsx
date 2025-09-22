@@ -62,7 +62,7 @@ export function ReviewsSection() {
                       <div key={index} className="w-full flex-shrink-0 px-4">
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden">
                           <div className="relative aspect-video">
-                            <video src={review.video} className="w-full h-full object-cover" controls />
+                            <video src={review.video} className="w-full h-full object-cover" controls preload="metadata" />
                           </div>
                           <div className="p-6">
                             <h3 className="text-xl font-bold text-white mb-1">{review.name}</h3>
