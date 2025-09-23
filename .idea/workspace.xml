@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="добавил оферту и превью видео">
+      <change afterPath="$PROJECT_DIR$/public/posters/IMAGE 2025-09-22 15:58:17.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/reviews-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/reviews-section.tsx" afterDir="false" />
     </list>
@@ -32,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kharlan/just_do_car/public/reviews",
+    "last_opened_file_path": "/Users/kharlan/just_do_car/public/posters",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +45,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/posters" />
       <recent name="$PROJECT_DIR$/public/reviews" />
       <recent name="$PROJECT_DIR$/public/video" />
       <recent name="$PROJECT_DIR$/public" />
@@ -69,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758187117558</updated>
-      <workItem from="1758187118649" duration="28740000" />
+      <workItem from="1758187118649" duration="33213000" />
     </task>
     <task id="LOCAL-00001" summary="исправил названия картинок">
       <option name="closed" value="true" />
@@ -95,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758542238491</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавил оферту и превью видео">
+      <option name="closed" value="true" />
+      <created>1758545020010</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758545020012</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
