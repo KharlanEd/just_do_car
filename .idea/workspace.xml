@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="добавил номер в хедер и модалку с формой">
-      <change afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
+    <list default="true" id="8ba9e1f4-e1ed-4506-aa97-19997db636c3" name="Changes" comment="добавил cайтмап и сео">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758187117558</updated>
-      <workItem from="1758187118649" duration="39400000" />
+      <workItem from="1758187118649" duration="41224000" />
     </task>
     <task id="LOCAL-00001" summary="исправил названия картинок">
       <option name="closed" value="true" />
@@ -124,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758715053215</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавил cайтмап и сео">
+      <option name="closed" value="true" />
+      <created>1758716612567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758716612567</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +140,7 @@
     <MESSAGE value="добавил оферту и превью видео" />
     <MESSAGE value="добавил постеры" />
     <MESSAGE value="добавил номер в хедер и модалку с формой" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил номер в хедер и модалку с формой" />
+    <MESSAGE value="добавил cайтмап и сео" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил cайтмап и сео" />
   </component>
 </project>

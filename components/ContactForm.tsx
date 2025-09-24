@@ -8,7 +8,7 @@ import { X } from "lucide-react"
 type ContactFormProps = {
     onClose?: () => void
     prefill?: { name?: string; phone?: string }
-    fullWidth?: boolean // новый пропс
+    fullWidth?: boolean
 }
 
 export function ContactForm({ onClose, prefill, fullWidth }: ContactFormProps) {
@@ -33,14 +33,14 @@ export function ContactForm({ onClose, prefill, fullWidth }: ContactFormProps) {
 
             const result = await response.json()
             if (result.success) {
-                setSubmitMessage("Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.")
+                setSubmitMessage("Заявку успішно надіслано! Ми зв'яжемося з вами найближчим часом.")
                 setFormData({ name: "", phone: "" })
             } else {
-                setSubmitMessage("Ошибка отправки. Попробуйте еще раз или позвоните нам.")
+                setSubmitMessage("Помилка надсилання. Спробуйте ще раз або зателефонуйте нам.")
             }
         } catch (error) {
             console.error(error)
-            setSubmitMessage("Ошибка отправки. Попробуйте еще раз или позвоните нам.")
+            setSubmitMessage("Помилка надсилання. Спробуйте ще раз або зателефонуйте нам.")
         } finally {
             setIsSubmitting(false)
         }
