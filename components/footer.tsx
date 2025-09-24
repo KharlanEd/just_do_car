@@ -88,16 +88,19 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex gap-6">
               {legalLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-sm text-gray-300 hover:text-orange-500 transition-colors"
-                >
-                  {link.label}
-                </a>
+                  <a
+                      key={index}
+                      href={link.href}
+                      className="text-sm text-gray-300 hover:text-orange-500 transition-colors"
+                  >
+                    {link.label}
+                  </a>
               ))}
             </div>
             <p className="text-sm text-gray-300">© 2024 JustDoCar. Всі права захищені.</p>
+            <a className="text-sm text-gray-300"
+               target="_blank" rel="noopener noreferrer nofollow" href="https://www.webdevsynergy.com.ua">Created by
+              WDS</a>
           </div>
         </div>
       </div>

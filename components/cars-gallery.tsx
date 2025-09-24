@@ -53,40 +53,88 @@ export function CarsGallery() {
   ]
 
 
+
+
   return (
     <section className="py-20" style={{ backgroundColor: "#0b1254" }}>
       <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+          {/* 1 блок */}
+          <div>
+            <div className="text-3xl font-bold text-white mb-2 text-center">
+              ДОСВІД ПОНАД
+            </div>
+            <div className="text-3xl font-black text-center">
+              <span className="text-red-500">6</span>{" "}
+              <span className="text-white">РОКІВ</span>
+            </div>
+          </div>
+
+          {/* 2 блок */}
+          <div>
+            {/* desktop */}
+            <div className="hidden md:block text-3xl font-black leading-tight text-center">
+              <span className="text-red-500">2000+</span>{" "}
+              <span className="text-white">ЗАДОВОЛЕНИХ КЛІЄНТІВ</span>
+            </div>
+            {/* mobile */}
+            <div className="block md:hidden text-3xl font-black leading-tight text-center">
+              <div className="text-red-500">2000</div>
+              <div className="text-red-500">+</div>
+              <div className="text-white">ЗАДОВОЛЕНИХ</div>
+              <div className="text-white">КЛІЄНТІВ</div>
+            </div>
+          </div>
+
+          {/* 3 блок */}
+          <div>
+            {/* desktop */}
+            <div className="hidden md:block text-3xl font-black leading-tight text-center">
+              <span className="text-red-500">3000+</span>{" "}
+              <span className="text-white">ПРИДБАНИХ АВТО</span>
+            </div>
+            {/* mobile */}
+            <div className="block md:hidden text-3xl font-black leading-tight text-center">
+              <div className="text-red-500">3000</div>
+              <div className="text-red-500">+</div>
+              <div className="text-white">ПРИДБАНИХ</div>
+              <div className="text-white">АВТО</div>
+            </div>
+          </div>
+        </div>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black text-white mb-4">ДОСТАВЛЕНІ АВТО</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cars.map((car, index) => (
-            <div
-              key={index}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden car-shadow hover:scale-105 transition-transform duration-300"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={car.image || "/placeholder.svg"}
-                  alt={`${car.year} ${car.make} ${car.model}`}
-                  className="w-full h-full object-cover"
-                />
+              <div
+                  key={index}
+                  className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden car-shadow hover:scale-105 transition-transform duration-300"
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                      src={car.image || "/placeholder.svg"}
+                      alt={`${car.year} ${car.make} ${car.model}`}
+                      className="w-full h-full object-contain"
+                  />
+
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {car.year} {car.make} {car.model}
+                  </h3>
+                  <div className="text-2xl font-black text-white mb-4">{car.price}</div>
+                  <Button onClick={() => setSelectedCar(index)}
+                          className="w-full bg-white hover:bg-white/90 text-[#0b1254] font-bold">ДЕТАЛЬНІШЕ</Button>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {car.year} {car.make} {car.model}
-                </h3>
-                <div className="text-2xl font-black text-white mb-4">{car.price}</div>
-                <Button onClick={() => setSelectedCar(index)} className="w-full bg-white hover:bg-white/90 text-[#0b1254] font-bold">ДЕТАЛЬНІШЕ</Button>
-              </div>
-            </div>
           ))}
         </div>
       </div>
       {selectedCar !== null && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
-            <ContactForm onClose={() => setSelectedCar(null)} fullWidth />
+            <ContactForm onClose={() => setSelectedCar(null)} fullWidth/>
           </div>
       )}
 
