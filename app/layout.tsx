@@ -32,6 +32,13 @@ export const metadata: Metadata = {
       { url: '/apple-touch-icon.png' },
     ],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://justdocar.com.ua/",
+  },
 }
 
 export default function RootLayout({

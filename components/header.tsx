@@ -40,10 +40,11 @@ export function Header() {
             </div>
 
             {/* Телефон */}
-            <div className="absolute flex items-center   left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden md:static md:flex items-center space-x-2 font-bold text-primary z-20">
+            <div className={`flex items-center space-x-2 font-bold text-primary md:hidden transition-all duration-300 ${isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
               <Phone className="w-5 h-5" />
               <a href="tel:+380632012525">+38 (063) 201-25-25</a>
             </div>
+
 
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#home" className="font-bold text-gray-700 hover:text-primary transition-colors">
@@ -113,8 +114,11 @@ export function Header() {
                     Адреса
                   </a>
                   <div className="flex items-center space-x-2 text-primary pt-2 border-t border-gray-200">
-                    <Phone className="w-5 h-5" />
-                    <span className="font-black text-lg">063 201 25 25</span>
+                    <Phone className="w-5 h-5"/>
+                    <a href="tel:+380632012525"
+                       className="font-bold text-gray-700 hover:text-primary transition-colors">
+                      +38 (063) 201-25-25
+                    </a>
                   </div>
                 </nav>
               </div>
