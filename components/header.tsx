@@ -39,6 +39,12 @@ export function Header() {
               <Image src="/logo.svg" alt="JUSTDOCAR" width={120} height={40} className="h-10 w-auto" />
             </div>
 
+            {/* Телефон */}
+            <div className="absolute flex items-center   left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden md:static md:flex items-center space-x-2 font-bold text-primary z-20">
+              <Phone className="w-5 h-5" />
+              <a href="tel:+380632012525">+38 (063) 201-25-25</a>
+            </div>
+
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#home" className="font-bold text-gray-700 hover:text-primary transition-colors">
                 Головна

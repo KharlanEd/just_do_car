@@ -5,7 +5,7 @@ export function Footer() {
   const socialLinks = [
     { icon: FaTelegramPlane, label: "Telegram", href: "https://t.me/justdocar" },
     { icon: FaInstagram, label: "Instagram", href: "https://instagram.com/just_do_car" },
-    { icon: FaViber, label: "Viber", href: "#" },
+    // { icon: FaViber, label: "Viber", href: "#" },
     { icon: FaYoutube, label: "YouTube", href: "https://www.youtube.com/@justdocar" },
     { icon: FaTiktok, label: "TikTok", href: "https://tiktok.com/@justdocar" },
   ]

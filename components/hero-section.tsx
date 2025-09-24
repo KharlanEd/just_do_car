@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Phone } from "lucide-react"
+import {ContactForm} from "@/components/ContactForm";
 
 export function HeroSection() {
   const [formData, setFormData] = useState({
@@ -71,43 +72,7 @@ export function HeroSection() {
             <br />
             ремонт - під ключ!
           </p>
-
-          {/* Форма подбора авто */}
-          <div className="max-w-md mx-auto bg-white/95 backdrop-blur-sm rounded-lg p-6">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <Input
-                type="text"
-                placeholder="ІМ'Я"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-500 font-bold"
-                required
-                disabled={isSubmitting}
-              />
-              <Input
-                type="tel"
-                placeholder="ТЕЛЕФОН"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-500 font-bold"
-                required
-                disabled={isSubmitting}
-              />
-              <Button
-                type="submit"
-                className="w-full font-black py-3 text-lg text-white"
-                style={{ backgroundColor: "#0b1254" }}
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "ВІДПРАВЛЯЄМО..." : "ПІДІБРАТИ АВТО"}
-              </Button>
-              {submitMessage && (
-                <p className={`text-sm mt-2 ${submitMessage.includes("успешно") ? "text-green-600" : "text-red-600"}`}>
-                  {submitMessage}
-                </p>
-              )}
-            </form>
-          </div>
+           <ContactForm/>
         </div>
       </div>
     </section>

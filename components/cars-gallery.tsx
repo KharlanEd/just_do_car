@@ -1,7 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
+import {ContactForm} from "@/components/ContactForm";
+import {useState} from "react";
 
 export function CarsGallery() {
+  const [selectedCar, setSelectedCar] = useState<number | null>(null)
   const cars = [
     {
       year: "2018",
@@ -47,6 +52,7 @@ export function CarsGallery() {
     },
   ]
 
+
   return (
     <section className="py-20" style={{ backgroundColor: "#0b1254" }}>
       <div className="container mx-auto px-4">
@@ -72,12 +78,18 @@ export function CarsGallery() {
                   {car.year} {car.make} {car.model}
                 </h3>
                 <div className="text-2xl font-black text-white mb-4">{car.price}</div>
-                <Button className="w-full bg-white hover:bg-white/90 text-[#0b1254] font-bold">ДЕТАЛЬНІШЕ</Button>
+                <Button onClick={() => setSelectedCar(index)} className="w-full bg-white hover:bg-white/90 text-[#0b1254] font-bold">ДЕТАЛЬНІШЕ</Button>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {selectedCar !== null && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+            <ContactForm onClose={() => setSelectedCar(null)} fullWidth />
+          </div>
+      )}
+
     </section>
   )
 }
