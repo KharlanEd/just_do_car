@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     // Отправляем письмо
     await transporter.sendMail({
       from: `"JUSTDOCAR" <${process.env.GMAIL_USER}>`,
-      to: "eduardxarlan@gmail.com", // получатель
+      to: "justdocar@gmail.com", // получатель
       subject: "Новая заявка - JUSTDOCAR",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

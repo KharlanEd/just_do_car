@@ -89,7 +89,7 @@ export function ContactForm({ onClose, prefill, fullWidth }: ContactFormProps) {
                     {isSubmitting ? "ВІДПРАВЛЯЄМО..." : "ВІДПРАВИТИ"}
                 </Button>
                 {submitMessage && (
-                    <p className={`text-sm mt-2 ${submitMessage.includes("успешно") ? "text-green-600" : "text-red-600"}`}>
+                    <p className={`text-sm mt-2 ${submitMessage.includes("успішно") ? "text-green-600" : "text-red-600"}`}>
                         {submitMessage}
                     </p>
                 )}
