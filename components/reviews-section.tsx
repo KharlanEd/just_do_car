@@ -94,7 +94,7 @@ export function ReviewsSection() {
 
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-white text-center mb-8">ВІДЕО ВІДГУКИ</h3>
-            <div className="relative max-w-4xl mx-auto" ref={videoWrapperRef}>
+            <div className="relative max-w-md mx-auto" ref={videoWrapperRef}>
               <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
@@ -103,10 +103,10 @@ export function ReviewsSection() {
                   {videoReviews.map((review, index) => (
                       <div key={index} className="w-full flex-shrink-0 px-4">
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden">
-                          <div className="relative aspect-video">
+                          <div className="relative aspect-[9/16]">
                             <video
                                 src={review.video}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                                 controls
                                 preload="metadata"
                                 playsInline
